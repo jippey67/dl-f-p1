@@ -1,6 +1,6 @@
 # Solve a Soduku with AI
 
-This repository contains the work I did for the Soduko project in the Artificial Intelligence Nanodegree. There are two parts to the project: implementation of the naked-twins search and modify technique, and implementation of the extension of the sudoku rules to include the diagonal constraints. I'll go over both parts in the following paragraphs.
+This repository contains the work I did for the Soduko project in the Artificial Intelligence Nanodegree. There are two parts to the project: implementation of the naked-twins search and modify technique, and implementation of the extension of the Sudoku rules to include the diagonal constraints. I'll go over both parts in the following paragraphs.
 
 ## Sudoku rules
 
