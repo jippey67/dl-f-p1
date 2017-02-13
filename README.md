@@ -17,8 +17,10 @@ The set of all rows, columns and 3x3 grids will be called 'units' in the remaind
 Naked twins in a Sudoku occur when within a unit 2 cells can only contain the same 2 values. As for these cells 2 values must be chosen out of a set of 2, those numbers cannot occur elsewhere in the same unit. They can therefor be stripped from the possibilities of all other cells in the unit. There are basically two approaches possible to implement this within the setup prepared in the Python files: 
 
 Search the Sudoku for a cell containing 2 digits --> search it's peers for a cell containing the same digits --> find units where both the first cell and the peer belong to --> remove the twin digits from all other cells in the units.
-As this approach requires both searching the peers and the units it is ineffcient and I therefore chose approach two:
+As this approach requires both searching the peers and the units it is ineffcient and I therefore chose to implement approach two:
 
 For each unit find the cells containing 2 digits --> find twins within this set --> remove the values in the twin from all other cells in the unit.
 
-## 
+## Diagonals as extra constraints in a Sudoku
+
+Within the solution process, the numbers available for a specific square are checked against a list of constraints. As adding the two diagonals to the Sudoku is adding two more constraints, the obvious solution is to add those constraints to the list of units. In this case the range from (A1, B2, ... , I9) and (A9, B8, ... , I1).
